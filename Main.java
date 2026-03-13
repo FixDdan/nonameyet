@@ -1,20 +1,14 @@
 import java.util.*;
+import javax.swing.*;
 
 public class Main{
     public static void main(String[] args){
-        Random random = new Random();
-        int r;
-        int c = 1;
-        while (true) {
-            r = random.nextInt(100);
-            System.out.println("bound"+c+" = "+r);
-            c++;
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-        }
+        JFrame frame = new JFrame("mod menu");
+        JLable lable = new JLable("Mod Menu");
+        frame.add(lable);
+        frame.setResizable(false);
+        frame.setSize(600,400);
+        frame.setVisible(true);
     }
+
 }
